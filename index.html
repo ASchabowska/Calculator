@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class = "wrapper">
+       <div class = "main">
+            <form class = "form">
+                <input id = "textView" class = "textView" readonly>
+            </form>
+
+            <p>
+                <input class = "button" type = "button" value = "C" onclick = "clean()">
+                <input class = "button" type = "button" value = "%" onclick = "percent()">
+                <input class = "button" type = "button" value = "/" onclick = "insert('/')">
+                <input class = "button" type = "button" value = "x" onclick = "insert('*')">  
+            </p>
+
+            <p>
+                <input class = "button" type = "button" value = "7" onclick = "insert(7)">
+                <input class = "button" type = "button" value = "8" onclick = "insert(8)">
+                <input class = "button" type = "button" value = "9" onclick = "insert(9)">
+                <input class = "button" type = "button" value = "-" onclick = "insert('-')">
+            </p>
+        
+            <p>
+                <input class = "button" type = "button" value = "4" onclick = "insert(4)">
+                <input class = "button" type = "button" value = "5" onclick = "insert(5)">
+                <input class = "button" type = "button" value = "6" onclick = "insert(6)">
+                <input class = "button" type = "button" value = "+" onclick = "insert('+')">
+            </p>
+        
+  
+            <p>
+                <input class = "buttonSum" type = "button" value = "=" onclick = "equal()"> 
+            </p> 
+                
+            <p>
+                <input class = "button" type = "button" value = "1"onclick = "insert(1)">
+                <input class = "button" type = "button" value = "2"onclick = "insert(2)">
+                <input class = "button" type = "button" value = "3"onclick = "insert(3)">
+            </p> 
+        
+            <p>
+                <input class = "buttonZero" type = "button" value = "0" onclick = "insert(0)">
+                <input class = "button" type = "button" value = "." onclick = "insert('.')">
+            </p> 
+            
+        </div>
+    </div>
+</body>
+</html>
